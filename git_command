@@ -1,0 +1,33 @@
+1. git init                                   -> Initializes the git repository 
+2. git clone <http_git_url>                   -> clones the remote repository/branch to local repository/branch
+3. git branch                                 -> Provides list of all branch
+4. git branch -r                              -> Provides list of remote branch
+5. git branch -a                              -> Provides list of both remote and local branch 
+6. git branch -v                              -> Provide details with branch name
+7. git branch <branch_name>                   -> creates new branch
+8. git checkout -b <branch_name>              -> creates new branch and switches to that branch
+9. git branch -d <branch_name>                -> Deletes the branch locally
+10. git push origin --delete <branch_name>    -> Deletes the branch in remote
+11. git branch -D <branch_name>               -> Force deletes the branch
+12. git branch -m <old_branch> <new_branch>   -> Rename the branch
+13. git branch --shor-current                 -> Display current branch
+14. git pull                                  -> Pulls latest data from remote repo
+15. git checkout <branch_name>                -> Switches the branch
+16. git config --global user.name <username>  -> Configure git username locally
+17. git config --global user.email <email>    -> Configure git email locally
+18. git status                                -> Shows the changes file list
+19. git add ./<filename>                      -> Saves our changes . for all file changes and filename for specific file changes
+20. git commit -m <commit_message>            -> Freeze our changes
+21. git push                                  -> Pushes local changes to remote 
+22. git merge <main/master>                   -> combines the local changes in remote
+23. git restore <file_name>                   -> Reverts the changes like undo
+24. git stash                                 -> Stores changes temporarily
+25. git stash pop                             -> Restores the temporary stored changes like redo
+26. git revert <commit_id>                    -> Switches to specific commit and changes above the specific commit will be removed locally
+27. git rm <file_name>                        -> Deletes the file
+28. git log -1                                -> Shows the latest commit data
+29. git log                                   -> Displays commit history of that branch
+30. git log --oneline                         -> Displays modification list with commit id in one line
+31. git diff <commit1> <commit2>              -> Shows difference between two commits
+32. git pull –rebase                          -> Fetches changes from remote repository and rebases with current branch with updated branch 
+33. git show                                  -> Shows specific commit details including changes
