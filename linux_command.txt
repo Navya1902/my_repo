@@ -1,0 +1,38 @@
+ls                                                 # List the files and directories (folder)
+ls -l                                              # Lists file and directories with detailed information
+cd <folder_name>                                   # Change directory 
+pwd                                                # Displays current directory path
+mkdir <folder_name>                                # Creates new directory
+touch <file_name>                                  # Creates new file
+cat > file_name                                    # Creates new file / replaces existing file with new content
+cat >> file_name                                   # Adds/ appends data with new and old content
+cat file1 file2 > file3                            # Concat all data from file1, file2 into file3
+cat <file_name>                                    # Displays file content
+tac <file_name>                                    # Displays file content in reverse order
+rm -r <folder_name>                                # Delete folder
+rm <file_name>                                     # Delete file
+ln -s <source_file> <link_name>                    # Creates symbolic/soft link
+find / -iname “<file_name>”                        # Finds the specified file path in all directories
+vi <file_name> / vim <file_name>                   # File editor, press “I” to insert data, “esc :q” to quit, “esc :qw” to save and quit, esc :q! to force quit 
+nano <file_name>                                   # File editor like Notepad
+mv <source_path> <destination_path>                # Moves file/folder
+cp <source_path> <destination_path>                # Copy file, use “-r” to copy folder
+chmod 400 <file_name>                              # Provide read access for my user
+chmod 777 <file_name>                              # Provide read/write access for file, use "-R" for folder access
+chmod 644 <file_name>                              # Reverts the access permission
+chown user <file_name>                             # Changes file ownership
+sudo apt-get update                                # Updates the basic library files, plugins and packages
+tar cvzf filename.tar.gz <path/of/file>            # Compress the data, "c" for create, "v" for verbose, "z" for gzip compressed file, "f" for file
+tar xvzf filename.tar                              # Decompress the data, "x" for extract
+ps aux                                             # Shows all running process with detailed information  
+top                                                # Shows CPU consumption data
+kill <PID_No>                                      # Terminates the process, use "-9" for force stop
+grep                                               # Searches for specific pattern or displays the matching line, "-i" for ignore case sensitive, "-v" for displaying non matching lines, "-r" or "-R" for recursive directory search, "-n" for line number display
+uname                                              # Displays user information
+df -h                                              # Displays disk space, "-h" for human readable
+du                                                 # Displays directory size, "-h" for human readable, "-s" for total size
+ifconfig                                           # Displays network interface information
+ping <host_name>                                   # Connectivity check
+ssh user@host_name                                 # Securely connects remote server
+scp <file_name> user@host_name:destination_path    # Copies file between host
+     
